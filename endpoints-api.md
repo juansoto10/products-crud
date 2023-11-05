@@ -1,32 +1,45 @@
 # API Endpoints
 
+*Nota: Falta añadir los métodos DELETE a las vistas de detalle de producto y categoría.*
+
 ## Products
 
 ### Product List
 
-- `/api/products`
+`/api/products`
+
+Métodos: GET, POST.
   
 ### Product Detail
 
-- `/api/products/<product_slug>`
+`/api/products/<product_slug>`
+
+Métodos: GET, PATCH.
   
 ### Product Search
 
-- `/api/products/search/<search_term>`
+`/api/products/search/<search_term>`
+
+Métodos: GET
 
 ## Categories
 
 ### Category List
 
-- `/api/categories`
+`/api/categories`
+
+Métodos: GET, POST.
 
 ### Category detail
 
-- `/api/categories/<int:category_id>`
+`/api/categories/<int:category_id>`
+
+Métodos: GET, PATCH.
 
 ### Category product list
 
-- `/api/categories/<int:category_id>/products`
+`/api/categories/<int:category_id>/products`
+Métodos: GET
   
 ------------------
 
@@ -53,7 +66,7 @@ Para dejar funcionando la API de Django se debe hacer lo siguiente:
     `. venv/bin/activate`
     Para desactivar el entorno virtual:
     `deactivate`
-7. Con el entorno virtual activado instalar los paquetes requeridos por el proyecto de Django:
+7. Con el entorno virtual activado, instalar los paquetes requeridos por el proyecto de Django:
    `pip install -r requirements.txt`
 8. Hacer las migraciones de la base de datos:
    `python manage.py makemigrations`
