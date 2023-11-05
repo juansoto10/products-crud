@@ -39,6 +39,7 @@ Métodos: GET, PATCH.
 ### Category product list
 
 `/api/categories/<int:category_id>/products`
+
 Métodos: GET
   
 ------------------
